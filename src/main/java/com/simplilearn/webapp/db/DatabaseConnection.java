@@ -17,8 +17,8 @@ public class DatabaseConnection {
 
 	// data source properties
 	private final String DB_URL = "jdbc:mysql://localhost:3306/estore_zone_db";
-	private final String DB_USR = "newdevuser";
-	private final String DB_PAS = "DevUser!74";
+	private final String DB_USR = "root";
+	private final String DB_PAS = "Alekhya@18Amulya@10";
 
 	Connection connection = null;
 	Statement statment = null;
@@ -221,15 +221,15 @@ public class DatabaseConnection {
 			// e.printStackTrace();
 		} finally {
 			// clean up
-			try {
-				// step5 : close connection
-				rst.close();
-				statment.close();
-				connection.close();
-				System.out.println("5. Closing the connection.");
-			} catch (SQLException e) {
-				System.out.println("Exception Occured ::: " + e.getClass());
-			}
+//			try {
+//				// step5 : close connection
+//				rst.close();
+//				statment.close();
+//				connection.close();
+//				System.out.println("5. Closing the connection.");
+//			} catch (SQLException e) {
+//				System.out.println("Exception Occured ::: " + e.getClass());
+//			}
 
 		}
 
